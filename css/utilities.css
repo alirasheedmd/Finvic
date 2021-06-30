@@ -173,6 +173,10 @@
   #showcase h1 {
     font-size: 40px;
   }
+
+  #showcase p {
+    font-size: 30px;
+  }
   .flex-items,
   .flex-columns .row,
   .flex-grid .row,

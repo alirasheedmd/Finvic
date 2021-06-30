@@ -16,6 +16,10 @@
   left: 0;
 }
 
+.my-fixed {
+  margin-top: 150px;
+}
+
 /* Button Class */
 
 .btn {

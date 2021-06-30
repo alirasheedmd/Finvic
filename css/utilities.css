@@ -1,0 +1,191 @@
+/* Text Colors */
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+/* Button Class */
+
+.btn {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+.primary {
+  background: var(--primary-color);
+}
+
+.secondary {
+  background: var(--secondary-color);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+/* Backgroud Clases */
+
+.bg-primary {
+  background: var(--primary-background);
+}
+.bg-secondary {
+  background: var(--secondary-color);
+}
+.bg-light {
+  background: #eee;
+}
+.bg-dark {
+  background: var(--primary-background);
+}
+
+/* Flex Column */
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  flex-basis: 100%;
+}
+
+.flex-items > div {
+  padding: 20px;
+}
+
+/* Flex Columns */
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .row .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .row .column .column-1,
+.flex-columns .row .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  height: 100%;
+  width: 100%;
+  /* Object-fit will cover the whole area with image without streching it out */
+  object-fit: cover;
+}
+
+.flex-columns .row .column .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+
+.flex-columns h2 {
+  font-weight: 100;
+  font-size: 40px;
+  font-smooth: auto;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+  font-smooth: auto;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+  font-smooth: auto;
+}
+
+/* Section Header */
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-header h4 {
+  font-weight: 100;
+  font-smooth: auto;
+}
+
+.section-header h2 {
+  font-size: 40px;
+}
+
+.section-padding {
+  /* 20px on the top 20px on the right and left and 40px on the bottom */
+  padding: 20px 20px 40px;
+}
+
+/* Flex Grid */
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  /* flex:25% is equal to 1 grow and 1 shrink and 25% flex-basis which is min width  */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.card {
+  box-shadow: 0px 0px 10px var(--primary-color);
+  width: 250px;
+  border-radius: 5%;
+  margin: 10px;
+}
+.flex-items.sa {
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  #showcase h1 {
+    font-size: 40px;
+  }
+  .flex-items,
+  .flex-columns .row,
+  .flex-grid .row,
+  .flex-columns.flex-reverse .row {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .section-header h2 {
+    font-size: 30px;
+  }
+}

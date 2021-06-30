@@ -1,0 +1,241 @@
+:root {
+  --primary-color: rgba(187, 134, 252, 0.2);
+  --secondary-color: rgba(3, 218, 197, 0.5);
+  --primary-background: rgba(31, 26, 36, 1);
+  --overlay-color: rgba(0, 0, 0, 0.9);
+  --hero-overlay-color: rgba(0, 0, 0, 0.7);
+  --menu-speed: 0.75s;
+  --bg: url("https://res.cloudinary.com/magwatt/image/upload/v1624985012/actionvance-6lPgX6yAW1Y-unsplash_yt98eg.jpg");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+span {
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  font-smooth: auto;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.logo {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+}
+.logo-inner {
+  width: 100vw;
+  text-align: center;
+  background: rgba(31, 26, 36, 1);
+}
+
+.logo img {
+  width: 150px;
+}
+.logo-inner img {
+  width: 150px;
+}
+
+#showcase {
+  background: var(--hero-overlay-color);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+.showcase-heading {
+  font-size: 90px;
+  font-weight: 800;
+  background-image: linear-gradient(45deg, #c44288, #5e17eb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.showcase-subheading {
+  font-size: 50px;
+  font-weight: 600;
+  color: transparent;
+  background: linear-gradient(90deg, #c44288, #5e17eb);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#showcase::before {
+  content: "";
+  background: var(--bg) center center/cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.showcase-container {
+  height: 100%;
+  width: 100%;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.py-3 {
+  padding: 10px 0;
+}
+
+a.btn {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, #c44288, #5e17eb, #2828ff);
+  padding: 5px 10px;
+}
+
+/* Icons */
+
+#about {
+  background: rgba(31, 26, 36, 1);
+}
+.solutions {
+  background: rgba(31, 26, 36, 1);
+}
+.icons {
+  padding-bottom: 30px;
+}
+
+.icons .flex-items {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.icons h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  border-radius: 50%;
+  background: #71f6a5;
+  padding: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.cases img:hover {
+  opacity: 0.7;
+}
+
+.team img {
+  border-radius: 50%;
+}
+
+/* Call Back  */
+
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 10px 20px;
+  border: #eee 1px solid;
+}
+
+.callback-form .btn {
+  padding: 12px 0;
+  margin-top: 10px;
+  background: var(--primary-color);
+  color: white;
+}
+
+.callback-form input:focus {
+  outline-color: var(--primary-color);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: var(--primary-background);
+}
+
+footer i {
+  padding: 20px;
+}
+footer a:hover {
+  color: var(--primary-background);
+}
+
+footer p {
+  color: #eee;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+}

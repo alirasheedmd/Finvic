@@ -207,3 +207,12 @@
     font-size: 30px;
   }
 }
+
+@media (max-width: 1024px) {
+  #showcase h1 {
+    font-size: 40px;
+  }
+  #showcase p {
+    font-size: 30px;
+  }
+}
